@@ -1,0 +1,16 @@
+{
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "simplepipes:block/tube_center",
+    "texture": "simplepipes:block/tube_center"
+  },
+  "elements": [
+    {
+      "from": [ 6, 6, 6 ],
+      "to": [ 10, 10, 10 ],
+      "faces": {
+        "north": { "uv": [ 6, 6, 10, 10 ], "texture": "#texture" }
+      }
+    }
+  ]
+}

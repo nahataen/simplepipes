@@ -1,0 +1,80 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.14'
+}
+
+version = mod_version
+group = mod_group
+
+base {
+    archivesName = mod_id
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/simplepipes.accesswidener")
+    runs {
+        configureEach {
+            property 'fabric.logging.console.level', 'debug'
+            property 'fabric.loader.console.disable', 'true'
+        }
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    withSourcesJar()
+}
+
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+    implementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
+
+    // Fabric API
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+
+
+}
+
+tasks.processResources.configure {
+    var replaceProperties = [
+            minecraft_version: project.minecraft_version,
+            minecraft_version_range: ">=26.1.2",
+            fabric_loader_version: project.fabric_loader_version,
+            fabric_api_version: project.fabric_api_version,
+            yarn_mappings: project.yarn_mappings,
+            mod_id: project.mod_id,
+            mod_name: project.mod_name,
+            mod_version: project.mod_version,
+            mod_license: "MIT",
+            mod_description: "A clean architecture simple pipes mod for Minecraft."
+    ]
+    inputs.properties replaceProperties
+
+    filesMatching(['fabric.mod.json']) {
+        expand replaceProperties
+    }
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+                'Specification-Title'   : project.mod_id,
+                'Specification-Vendor' : 'example',
+                'Specification-Version' : '1',
+                'Implementation-Title' : project.name,
+                'Implementation-Version': version,
+                'Implementation-Vendor' : 'example',
+                'Fabric-Loom-Min-MC-Version': '26.1'
+        ])
+    }
+}

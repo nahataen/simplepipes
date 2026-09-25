@@ -1,0 +1,17 @@
+{
+  "multipart": [
+    { "when": { "facing": "north" }, "apply": { "model": "simplepipes:block/filter_tube_center" } },
+    { "when": { "facing": "south" }, "apply": { "model": "simplepipes:block/filter_tube_center", "y": 180 } },
+    { "when": { "facing": "east" }, "apply": { "model": "simplepipes:block/filter_tube_center", "y": 90 } },
+    { "when": { "facing": "west" }, "apply": { "model": "simplepipes:block/filter_tube_center", "y": 270 } },
+    { "when": { "facing": "up" }, "apply": { "model": "simplepipes:block/filter_tube_center", "x": 270 } },
+    { "when": { "facing": "down" }, "apply": { "model": "simplepipes:block/filter_tube_center", "x": 90 } },
+    
+    { "when": { "north": "true" }, "apply": { "model": "simplepipes:block/filter_tube_side" } },
+    { "when": { "south": "true" }, "apply": { "model": "simplepipes:block/filter_tube_side", "y": 180 } },
+    { "when": { "east": "true" }, "apply": { "model": "simplepipes:block/filter_tube_side", "y": 90 } },
+    { "when": { "west": "true" }, "apply": { "model": "simplepipes:block/filter_tube_side", "y": 270 } },
+    { "when": { "up": "true" }, "apply": { "model": "simplepipes:block/filter_tube_side", "x": 270 } },
+    { "when": { "down": "true" }, "apply": { "model": "simplepipes:block/filter_tube_side", "x": 90 } }
+  ]
+}

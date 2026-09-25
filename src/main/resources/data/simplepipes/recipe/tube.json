@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "NNN",
+    "NCN",
+    "NNN"
+  ],
+  "key": {
+    "N": "minecraft:iron_nugget",
+    "C": "minecraft:copper_ingot"
+  },
+  "result": {
+    "id": "simplepipes:tube",
+    "count": 4
+  }
+}

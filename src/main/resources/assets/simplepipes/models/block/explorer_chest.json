@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "simplepipes:block/explorer_chest_top",
+    "front": "simplepipes:block/explorer_chest_front",
+    "side": "simplepipes:block/explorer_chest_side"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "simplepipes:block/filter_tube_center"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "simplepipes:block/extraction_tube_center"
+  }
+}

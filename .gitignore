@@ -1,0 +1,24 @@
+# Gradle / compilados
+build/
+.gradle/
+out/
+
+# Minecraft de pruebas (mundo, logs, descargas)
+run/
+
+# Eclipse
+.classpath
+.project
+bin/
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs y capturas
+*.log
+captures/

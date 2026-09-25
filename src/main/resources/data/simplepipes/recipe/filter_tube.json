@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    "simplepipes:tube",
+    "minecraft:comparator"
+  ],
+  "result": {
+    "id": "simplepipes:filter_tube",
+    "count": 1
+  }
+}

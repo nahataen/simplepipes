@@ -1,0 +1,10 @@
+{
+  "block.simplepipes.tube": "Transport Tube",
+  "block.simplepipes.filter_tube": "Filter Tube",
+  "block.simplepipes.extraction_tube": "Extraction Tube",
+  "item.simplepipes.tube": "Transport Tube",
+  "item.simplepipes.filter_tube": "Filter Tube",
+  "item.simplepipes.extraction_tube": "Extraction Tube",
+  "block.simplepipes.explorer_chest": "Explorer Chest",
+  "item.simplepipes.explorer_chest": "Explorer Chest"
+}

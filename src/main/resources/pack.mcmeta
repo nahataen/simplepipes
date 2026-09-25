@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "SimplePipes Resources",
+    "pack_format": 45,
+    "supported_formats": {
+      "min_inclusive": 45,
+      "max_inclusive": 45
+    }
+  }
+}
