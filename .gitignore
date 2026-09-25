@@ -22,3 +22,7 @@ bin/
 # Logs y capturas
 *.log
 captures/
+
+# Config local de IA (no es del mod)
+.agents/
+skills-lock.json
