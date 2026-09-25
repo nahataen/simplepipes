@@ -42,4 +42,5 @@ gradlew.bat build       # genera el .jar en build/libs
 
 ## 📄 Licencia
 
-MIT — úsalo, modifícalo y compártelo libremente.
+**CC BY-NC 4.0** — Úsalo, modifícalo y compártelo libremente. No se permite el uso comercial.
+
